@@ -1,0 +1,123 @@
+body{
+    margin:0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.zone{
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+/* Nav Bar begins */
+nav{
+    background-color: lightgreen;
+    width: 100%;
+
+}
+.main-nav{
+   display: flex;
+   list-style: none;
+   font-size: 0.6em;
+   margin: 0;
+   overflow: hidden;
+   
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+@media only screen and (max-width:600px){
+    .main-nav{
+        font-size:0.1em;
+        padding: 0;
+    }
+}
+.push{
+    margin-left: auto;
+}
+li{
+    padding: 20px;
+    transition: all 0.3s linear;
+    
+}
+a{
+    color: #f5f5f6;
+    text-decoration: none;
+}
+a:hover{
+   
+    padding:20px;
+    background-color: #444;
+  
+   
+}
+
+
+/* cover start */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 60px;
+   
+    
+}
+
+
+.cover{
+    border: 1px solid palevioletred;
+
+}
+.img-cover{
+    width: 30rem;
+    margin-bottom: 60px;
+    
+}
+/* cover ends */
+
+/* grid zone */
+.project-grid{
+    border: 1px solid  rgb(68, 116, 156);
+    background-color: rgb(68, 116, 156);
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+.box{
+    background-color: #444;
+    padding: 120px;
+    margin:20px;
+}
+.box > img{
+    width: 100%;
+}
+
+.box:hover{
+    -webkit-box-transform:rotate(-6deg);
+    -moz-box-transform:rotate(-6deg);
+    -o-box-transform:rotate(-6deg);
+    transform:rotate(-6deg);
+    
+}
+
+/* footer starts */
+
+.footer{
+    border: 1px solid orange;
+    background-color: orange;
+    text-align: center;
+}
